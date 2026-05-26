@@ -101,6 +101,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'resources/glossary',
         'resources/cheatsheet',
+        'resources/how-to-read-diagrams',
         'resources/references',
       ],
     },

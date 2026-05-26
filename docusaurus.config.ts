@@ -121,6 +121,11 @@ const config: Config = {
           position: 'left',
         },
         {
+          to: '/docs/resources/how-to-read-diagrams',
+          label: 'Đọc diagram',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/tuandung222/transformers-internals-foundation',
           label: 'GitHub',
           position: 'right',
@@ -144,6 +149,7 @@ const config: Config = {
           items: [
             {label: 'Glossary', to: '/docs/resources/glossary'},
             {label: 'Cheatsheet', to: '/docs/resources/cheatsheet'},
+            {label: 'Đọc diagram', to: '/docs/resources/how-to-read-diagrams'},
             {label: 'References', to: '/docs/resources/references'},
           ],
         },

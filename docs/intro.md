@@ -23,6 +23,7 @@ Bạn sẽ học được:
 - Cấu trúc KV cache với `CacheLayerMixin`, `DynamicCache`, `StaticCache`, `EncoderDecoderCache`.
 - Toàn bộ pipeline của `generate()`: chuẩn bị inputs, cache, logits processors, stopping criteria, rồi dispatch vào `_sample`, `_beam_search`, `_assisted_decoding`.
 - Convention thiết kế: tách `PreTrainedConfig` khỏi `PreTrainedModel`, dùng `modular_*.py` để tạo `modeling_*.py`, đăng ký vào `AutoModel` registry, dùng `Generic*ForX` mixin cho task heads.
+- Cách đọc diagram và chart kỹ thuật mà không bị choáng: phân biệt node type, edge meaning, critical path, dataflow, sequence, dependency, state machine, deployment và profiler chart.
 
 ## Triết lý đọc source
 
@@ -41,7 +42,7 @@ Mỗi phần đều tuân theo cấu trúc:
 3. **Walkthrough source**: mở file thật, đọc từng đoạn, gắn trở lại với toán hoặc đặc tả.
 4. **Pitfall và edge case**: những chỗ dễ sai khi tự viết model hoặc khi debug.
 
-Mọi đoạn code trích dẫn đều từ thư viện thật, không phải pseudocode. Nếu bạn clone repo `huggingface/transformers` cùng version, bạn sẽ tìm thấy các dòng đó nguyên văn.
+Mọi đoạn code trích dẫn đều từ thư viện thật, không phải pseudocode. Nếu bạn clone repo `huggingface/transformers` cùng version, bạn sẽ tìm thấy các dòng đó nguyên văn. Khi gặp sơ đồ phức tạp, đọc thêm [Cách đọc diagram và chart trong software design](/docs/resources/how-to-read-diagrams) để biết cách tách title, node, edge, path và invariant trước khi đi vào chi tiết.
 
 ## Cấu trúc các phần
 

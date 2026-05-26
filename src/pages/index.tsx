@@ -25,6 +25,7 @@ function HomepageHeader(): ReactNode {
         <div className={styles.heroButtons}>
           <Link className={`button button--primary button--lg ${styles.heroButton}`} to="/docs/intro">Bắt đầu đọc</Link>
           <Link className={`button button--secondary button--lg ${styles.heroButton}`} to="/docs/00-tong-quan/01-overview">Vào Phần 0</Link>
+          <Link className={`button button--secondary button--lg ${styles.heroButton}`} to="/docs/resources/how-to-read-diagrams">Cách đọc diagram</Link>
         </div>
       </div>
     </header>
@@ -37,7 +38,7 @@ function PartGrid(): ReactNode {
       <div className="container">
         <Heading as="h2" className={styles.sectionTitle}>Chuỗi bài giảng đi sâu</Heading>
         <p className={styles.sectionSubtitle}>
-          Mục tiêu: bạn đọc xong sẽ tự tin mở `modeling_llama.py`, `cache_utils.py`, hoặc `generation/utils.py` và hiểu từng quyết định thiết kế. Mỗi phần đều có walkthrough source code thật, kèm derivation toán học và sơ đồ luồng dữ liệu.
+          Mục tiêu: bạn đọc xong sẽ tự tin mở `modeling_llama.py`, `cache_utils.py`, hoặc `generation/utils.py` và hiểu từng quyết định thiết kế. Mỗi phần đều có walkthrough source code thật, kèm derivation toán học, sơ đồ luồng dữ liệu và một tài nguyên riêng về cách đọc diagram không bị quá tải.
         </p>
         <div className={styles.grid}>
           {parts.map(([number, title, description, to]) => (
